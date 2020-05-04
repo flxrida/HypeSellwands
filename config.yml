@@ -1,0 +1,22 @@
+configuration:
+  itemName: "&6Sell&eWand"
+  itemLore:
+    - "&r"
+    - "&eBâton de vente"
+    - "&r"
+    - "&eFais un clic droit sur un"
+    - "&ecoffre avec cet item en main"
+    - "&epour vendre tout son contenu."
+  sellCommand: "sellall"
+  giveOtherPermission: sellwands.give.other
+  selfGivePermission: sellwands.give
+  pluginReloadPermission: sellwands.reload
+messages:
+  tooFewArguments: "&cDésolé, il n'y a pas assez d'arguments."
+  tooMuchArguments: "&cDésolé, cette commande ne demande pas autant d'arguments"
+  incorrectTarget: "&cDésolé, mais le joueur &e%player%&c est hors-ligne"
+  missingPermission: "&cDésolé, vous n'avez pas la permission de faire ça."
+  successfullySelfGive: "&aUn bâton de vente a été ajouté à votre inventaire."
+  successfullyGiveTo: "&aUn bâton de vente a été ajouté à l'inventaire de &e%player%&a."
+  pluginEnabled: "&aHypeSellwands enabled !"
+  pluginDisabled: "&aHypeSellwands disabled !"
