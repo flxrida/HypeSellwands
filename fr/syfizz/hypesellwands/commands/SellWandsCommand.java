@@ -35,7 +35,7 @@ public class SellWandsCommand implements CommandExecutor {
             if (sender instanceof Player){
                 if (args[0].equalsIgnoreCase("give")){
                     if(sender.hasPermission(main.getConfig().getString("configuration.selfGivePermission"))){
-                        ItemStack wand = new ItemStack(Material.DIAMND_HOE);
+                        ItemStack wand = new ItemStack(Material.DIAMOND_HOE);
                         ItemMeta wandmeta = wand.getItemMeta();
                         wandmeta.setDisplayName(main.getConfig().getString("configuration.itemName").replaceAll("&","§"));
                         List<String> lore = (List<String>) main.getConfig().getList("configuration.itemLore");
