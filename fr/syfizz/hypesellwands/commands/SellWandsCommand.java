@@ -35,7 +35,7 @@ public class SellWandsCommand implements CommandExecutor {
             if (sender instanceof Player){
                 if (args[0].equalsIgnoreCase("give")){
                     if(sender.hasPermission(main.getConfig().getString("configuration.selfGivePermission"))){
-                        ItemStack wand = new ItemStack(Material.STICK);
+                        ItemStack wand = new ItemStack(Material.DIAMND_HOE);
                         ItemMeta wandmeta = wand.getItemMeta();
                         wandmeta.setDisplayName(main.getConfig().getString("configuration.itemName").replaceAll("&","§"));
                         List<String> lore = (List<String>) main.getConfig().getList("configuration.itemLore");
@@ -56,7 +56,7 @@ public class SellWandsCommand implements CommandExecutor {
                     return true;
                 }
             } else {
-                sender.sendMessage("Cette commande ne peut pas être exécutée par la Console.");
+                sender.sendMessage("This command may not be executed by console.");
                 return true;
             }
         } else if (args.length==2) {
