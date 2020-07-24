@@ -2,8 +2,8 @@ author: SyFizz_
 version: 0.0.1
 main: fr.syfizz.hypesellwands.Main
 name: HypeSellWands
-description: Simple plugin de SellWands
+description: Simple SellWands plugin.
 commands:
   sellwands:
     usage: /sellwands <give|reload> [player]
-    description: Permet de donner une wand à un joueur ou à soi-même
+    description: Allows you to give a wand to a player or to yourself
