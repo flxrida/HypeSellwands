@@ -29,7 +29,7 @@ public class PlayerListener implements Listener {
             Block block = e.getClickedBlock();
             if (block.getType().equals(Material.CHEST) || block.getType().equals(Material.TRAPPED_CHEST)){
                 Chest chest = (Chest) block.getState();
-                ItemStack item = new ItemStack(Material.STICK);
+                ItemStack item = new ItemStack(Material.DIAMOND_HOE);
                 ItemMeta meta = item.getItemMeta();
                 meta.setDisplayName(main.getConfig().getString("configuration.itemName").replaceAll("&","§"));
                 item.setItemMeta(meta);
